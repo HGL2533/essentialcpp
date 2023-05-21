@@ -26,7 +26,7 @@ int main()
 	ofstream ofileodd("3.4_odd.txt");
 	ofstream ofileeven("3.4_even.txt");
 	ostream_iterator<int> odd_it(ofileodd, "\n"), even_it(ofileeven, " ");
-	vector<int>::iterator division = stable_partition(vec.begin(), vec.end(), even_elem());
+	vector<int>::iterator division = stable_partition(vec.begin(), vec.end(), even_elem());        //partition会把满足 even_elem()的放在前面，不满足的放后面
 	
 	copy(vec.begin(), division, even_it);
 	copy(division, vec.end(), odd_it);

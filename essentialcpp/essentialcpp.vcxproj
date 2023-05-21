@@ -24,6 +24,7 @@
     <ProjectGuid>{bd86cac5-3f8f-4535-a470-836c83a3ccf7}</ProjectGuid>
     <RootNamespace>essentialcpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>e4.1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="essentialcpp.cpp" />
+    <ClCompile Include="e4.1_main.cpp" />
+    <ClCompile Include="Stack.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
