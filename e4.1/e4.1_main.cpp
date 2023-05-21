@@ -29,6 +29,6 @@ int main() {
 		if (st.pop(str))
 			cout << str << " ";
 	}
-
+	cout << "\n";
 	cout << "there are " << st.size() << "elements in st!" << endl;
 }
