@@ -32,7 +32,10 @@ private:
 	static int _tests_run;
 	static int _tests_passed;
 };
-
+/*static 成员是与类关联，所有该类的对象共享一份； 其次，static成员必须在类外进行初始化！！*/
+/*static修饰的变量先于对象存在，所以static修饰的变量要在类外初始化。因为static是所有对象共享的变量，必须要比对象先存在。*/
+/*由于static修饰的类成员属于类，不属于对象，因此static类成员函数是没有this指针的，this指针是指向本对象的指针。正因为没有this指针，所以static类成员函数
+不能访问非static的类成员，只能访问 static修饰的类成员。*/
 string globalWrapper::_program_name;
 string globalWrapper::_version_stamp;
 int globalWrapper::_version_number;
